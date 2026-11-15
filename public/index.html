@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLAIN FOLD</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">2026 WINTER</p>
+        <h1>매일 꺼내 입는<br>기본의 레이어</h1>
+        <p class="hero-sub">유행을 타지 않는 기본 옷을, 오래 입을 수 있게 만듭니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/products.html">전체 상품 보기</a>
+          <a class="btn" href="/products.html?category=outer">아우터 보기</a>
+        </div>
+      </div>
+      <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+    </section>
+
+    <section class="perks">
+      <div><strong>50,000원 이상 무료배송</strong><span>그 미만은 배송비 3,000원</span></div>
+      <div><strong>사이즈 S ~ XL</strong><span>남녀 공용 사이즈</span></div>
+      <div><strong>토스페이먼츠 결제</strong><span>테스트 모드로 동작</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>카테고리</h2></div>
+      <div class="category-grid" id="category-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>신상품</h2><a href="/products.html?sort=new" class="more">더보기</a></div>
+      <div class="grid" id="new-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>베스트</h2><a href="/products.html" class="more">더보기</a></div>
+      <div class="grid" id="best-grid"></div>
+    </section>
+  </main>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="/js/garment.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

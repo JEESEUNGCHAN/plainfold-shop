@@ -1,0 +1,268 @@
+{
+  "shipping": { "fee": 3000, "freeOver": 50000 },
+  "categories": [
+    { "id": "top", "name": "상의" },
+    { "id": "bottom", "name": "하의" },
+    { "id": "outer", "name": "아우터" },
+    { "id": "acc", "name": "잡화" }
+  ],
+  "products": [
+    {
+      "id": "t01", "name": "베이직 크루넥 반팔 티셔츠", "category": "top", "shape": "tee",
+      "price": 19000, "date": "2026-11-02", "isNew": true, "best": true,
+      "colors": [
+        { "name": "화이트", "hex": "#f4f3ef" }, { "name": "블랙", "hex": "#26262b" },
+        { "name": "멜란지그레이", "hex": "#b9bbbe" }, { "name": "네이비", "hex": "#2c3a55" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["블랙/XL"],
+      "desc": "매일 입기 좋은 기본 반팔 티셔츠예요. 목 늘어남을 줄이려고 넥 립을 두껍게 잡았어요.",
+      "material": "면 100%", "fit": "레귤러 핏"
+    },
+    {
+      "id": "t02", "name": "헤비웨이트 롱슬리브 티셔츠", "category": "top", "shape": "longsleeve",
+      "price": 29000, "date": "2026-10-20", "isNew": false, "best": false,
+      "colors": [
+        { "name": "화이트", "hex": "#f4f3ef" }, { "name": "차콜", "hex": "#3d3f44" },
+        { "name": "올리브", "hex": "#6b6f4a" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "도톰한 원단이라 한 장으로 입어도 비치지 않아요. 간절기에 단독으로, 겨울엔 이너로 입어요.",
+      "material": "면 100% (260g)", "fit": "세미오버 핏"
+    },
+    {
+      "id": "t03", "name": "루즈핏 스웨트셔츠", "category": "top", "shape": "sweat",
+      "price": 45000, "date": "2026-10-28", "isNew": false, "best": true,
+      "colors": [
+        { "name": "오트밀", "hex": "#d9cdb8" }, { "name": "멜란지그레이", "hex": "#b9bbbe" },
+        { "name": "네이비", "hex": "#2c3a55" }, { "name": "버건디", "hex": "#6e2a35" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["오트밀/S", "버건디/XL"],
+      "desc": "어깨선이 내려간 루즈핏 맨투맨이에요. 안쪽은 쭈리 원단이라 보풀이 적어요.",
+      "material": "면 80%, 폴리에스터 20%", "fit": "루즈 핏"
+    },
+    {
+      "id": "t04", "name": "기모 후드 스웨트셔츠", "category": "top", "shape": "hoodie",
+      "price": 59000, "date": "2026-11-09", "isNew": true, "best": false,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "멜란지그레이", "hex": "#b9bbbe" },
+        { "name": "세이지", "hex": "#9aab94" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["세이지/M"],
+      "desc": "안쪽 기모가 있어 겨울에도 따뜻한 후드예요. 후드 모양이 무너지지 않게 이중으로 만들었어요.",
+      "material": "면 70%, 폴리에스터 30% (기모)", "fit": "레귤러 핏"
+    },
+    {
+      "id": "t05", "name": "옥스퍼드 버튼다운 셔츠", "category": "top", "shape": "shirt",
+      "price": 49000, "date": "2026-10-12", "isNew": false, "best": false,
+      "colors": [
+        { "name": "화이트", "hex": "#f4f3ef" }, { "name": "스카이블루", "hex": "#a9c4de" },
+        { "name": "핑크", "hex": "#e8c4c4" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "깃 끝을 단추로 고정하는 버튼다운 셔츠예요. 단독으로도, 니트 안에 받쳐 입어도 좋아요.",
+      "material": "면 100% (옥스퍼드)", "fit": "레귤러 핏"
+    },
+    {
+      "id": "t06", "name": "램스울 크루넥 니트", "category": "top", "shape": "knit",
+      "price": 69000, "date": "2026-11-05", "isNew": true, "best": false,
+      "colors": [
+        { "name": "아이보리", "hex": "#ece6d6" }, { "name": "브라운", "hex": "#6d4c3a" },
+        { "name": "블랙", "hex": "#26262b" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["브라운/L"],
+      "desc": "부드러운 램스울을 섞은 기본 니트예요. 따끔거림이 덜해서 맨살에 입어도 괜찮아요.",
+      "material": "램스울 50%, 나일론 30%, 아크릴 20%", "fit": "레귤러 핏"
+    },
+    {
+      "id": "b01", "name": "원턱 와이드 슬랙스", "category": "bottom", "shape": "wide",
+      "price": 55000, "date": "2026-10-25", "isNew": false, "best": true,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "그레이", "hex": "#8a8c8f" },
+        { "name": "베이지", "hex": "#c8b796" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["베이지/S"],
+      "desc": "앞에 턱이 하나 있어 앉아도 편한 와이드 슬랙스예요. 밑단까지 일자로 떨어져요.",
+      "material": "폴리에스터 65%, 레이온 32%, 스판 3%", "fit": "와이드 핏"
+    },
+    {
+      "id": "b02", "name": "스트레이트 생지 데님", "category": "bottom", "shape": "jeans",
+      "price": 62000, "date": "2026-10-15", "isNew": false, "best": false,
+      "colors": [
+        { "name": "인디고", "hex": "#2e3f63" }, { "name": "라이트블루", "hex": "#8ea6c4" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "워싱을 최소로 한 스트레이트 데님이에요. 입을수록 자기 체형에 맞게 색이 빠져요.",
+      "material": "면 100% (13.5oz)", "fit": "스트레이트 핏"
+    },
+    {
+      "id": "b03", "name": "스웨트 조거 팬츠", "category": "bottom", "shape": "jogger",
+      "price": 42000, "date": "2026-11-07", "isNew": true, "best": false,
+      "colors": [
+        { "name": "멜란지그레이", "hex": "#b9bbbe" }, { "name": "블랙", "hex": "#26262b" },
+        { "name": "네이비", "hex": "#2c3a55" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["네이비/S"],
+      "desc": "밑단에 시보리가 있는 조거 팬츠예요. 허리 밴딩과 스트링으로 길이와 허리를 맞출 수 있어요.",
+      "material": "면 80%, 폴리에스터 20%", "fit": "테이퍼드 핏"
+    },
+    {
+      "id": "b04", "name": "나일론 카고 팬츠", "category": "bottom", "shape": "cargo",
+      "price": 65000, "date": "2026-10-30", "isNew": false, "best": false,
+      "colors": [
+        { "name": "카키", "hex": "#6b6a4c" }, { "name": "블랙", "hex": "#26262b" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "양옆에 큰 주머니가 달린 카고 팬츠예요. 가벼운 나일론이라 물이 잘 스며들지 않아요.",
+      "material": "나일론 100%", "fit": "릴랙스 핏"
+    },
+    {
+      "id": "b05", "name": "코튼 치노 팬츠", "category": "bottom", "shape": "pants",
+      "price": 49000, "date": "2026-10-08", "isNew": false, "best": false,
+      "colors": [
+        { "name": "베이지", "hex": "#c8b796" }, { "name": "네이비", "hex": "#2c3a55" },
+        { "name": "올리브", "hex": "#6b6f4a" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["올리브/XL"],
+      "desc": "어떤 상의에도 잘 어울리는 기본 치노 팬츠예요. 약간의 스판이 있어 활동하기 편해요.",
+      "material": "면 97%, 스판 3%", "fit": "레귤러 핏"
+    },
+    {
+      "id": "b06", "name": "데님 버뮤다 쇼츠", "category": "bottom", "shape": "shorts",
+      "price": 39000, "date": "2026-09-30", "isNew": false, "best": false,
+      "colors": [
+        { "name": "인디고", "hex": "#2e3f63" }, { "name": "블랙", "hex": "#26262b" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "무릎 위까지 오는 버뮤다 길이의 데님 쇼츠예요.",
+      "material": "면 100%", "fit": "와이드 핏"
+    },
+    {
+      "id": "o01", "name": "코튼 워크 재킷", "category": "outer", "shape": "jacket",
+      "price": 89000, "date": "2026-10-22", "isNew": false, "best": true,
+      "colors": [
+        { "name": "브라운", "hex": "#6d4c3a" }, { "name": "블랙", "hex": "#26262b" },
+        { "name": "네이비", "hex": "#2c3a55" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["브라운/M"],
+      "desc": "두꺼운 면 캔버스로 만든 워크 재킷이에요. 가슴 주머니 두 개와 셔츠 칼라가 있어요.",
+      "material": "면 100% (캔버스)", "fit": "박시 핏"
+    },
+    {
+      "id": "o02", "name": "울 블렌드 싱글 코트", "category": "outer", "shape": "coat",
+      "price": 169000, "date": "2026-11-10", "isNew": true, "best": false,
+      "colors": [
+        { "name": "차콜", "hex": "#3d3f44" }, { "name": "카멜", "hex": "#b08a5a" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "무릎 길이의 싱글 버튼 코트예요. 울을 섞어 가볍지만 바람을 잘 막아요.",
+      "material": "울 60%, 폴리에스터 40%", "fit": "오버 핏"
+    },
+    {
+      "id": "o03", "name": "브이넥 니트 가디건", "category": "outer", "shape": "cardigan",
+      "price": 65000, "date": "2026-10-05", "isNew": false, "best": false,
+      "colors": [
+        { "name": "아이보리", "hex": "#ece6d6" }, { "name": "그레이", "hex": "#8a8c8f" },
+        { "name": "네이비", "hex": "#2c3a55" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["네이비/M"],
+      "desc": "단추 다섯 개짜리 기본 가디건이에요. 셔츠나 티셔츠 위에 가볍게 걸쳐요.",
+      "material": "면 60%, 아크릴 40%", "fit": "레귤러 핏"
+    },
+    {
+      "id": "o04", "name": "경량 숏 패딩", "category": "outer", "shape": "padding",
+      "price": 129000, "date": "2026-11-12", "isNew": true, "best": false,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "아이보리", "hex": "#ece6d6" },
+        { "name": "올리브", "hex": "#6b6f4a" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["아이보리/L", "아이보리/XL"],
+      "desc": "허리까지 오는 짧은 길이의 패딩이에요. 가볍고 접으면 작아져서 들고 다니기 좋아요.",
+      "material": "겉감 나일론 100%, 충전재 덕다운 80:20", "fit": "레귤러 핏"
+    },
+    {
+      "id": "o05", "name": "워싱 데님 트러커 재킷", "category": "outer", "shape": "denimjacket",
+      "price": 79000, "date": "2026-09-25", "isNew": false, "best": false,
+      "colors": [
+        { "name": "인디고", "hex": "#2e3f63" }, { "name": "라이트블루", "hex": "#8ea6c4" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": [],
+      "desc": "가슴에 플랩 주머니가 있는 기본 트러커 재킷이에요. 봄과 가을에 입기 좋아요.",
+      "material": "면 100%", "fit": "레귤러 핏"
+    },
+    {
+      "id": "o06", "name": "후드 바람막이", "category": "outer", "shape": "windbreaker",
+      "price": 75000, "date": "2026-10-18", "isNew": false, "best": false,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "네이비", "hex": "#2c3a55" },
+        { "name": "오렌지", "hex": "#d9662b" }
+      ],
+      "sizes": ["S", "M", "L", "XL"], "soldOut": ["오렌지/S"],
+      "desc": "생활 방수가 되는 가벼운 바람막이예요. 후드를 조일 수 있어요.",
+      "material": "나일론 100% (발수 가공)", "fit": "레귤러 핏"
+    },
+    {
+      "id": "a01", "name": "6패널 볼캡", "category": "acc", "shape": "cap",
+      "price": 25000, "date": "2026-10-10", "isNew": false, "best": false,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "베이지", "hex": "#c8b796" },
+        { "name": "네이비", "hex": "#2c3a55" }
+      ],
+      "sizes": ["FREE"], "soldOut": [],
+      "desc": "챙이 살짝 휜 기본 볼캡이에요. 뒤쪽 스트랩으로 둘레를 조절할 수 있어요.",
+      "material": "면 100%", "fit": "머리둘레 56~60cm"
+    },
+    {
+      "id": "a02", "name": "골지 비니", "category": "acc", "shape": "beanie",
+      "price": 19000, "date": "2026-11-03", "isNew": true, "best": false,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "그레이", "hex": "#8a8c8f" },
+        { "name": "오렌지", "hex": "#d9662b" }, { "name": "아이보리", "hex": "#ece6d6" }
+      ],
+      "sizes": ["FREE"], "soldOut": ["오렌지/FREE"],
+      "desc": "끝단을 접어 쓰는 골지 비니예요. 접는 폭에 따라 깊이를 바꿀 수 있어요.",
+      "material": "아크릴 100%", "fit": "프리 사이즈"
+    },
+    {
+      "id": "a03", "name": "캔버스 토트백", "category": "acc", "shape": "tote",
+      "price": 32000, "date": "2026-10-02", "isNew": false, "best": false,
+      "colors": [
+        { "name": "아이보리", "hex": "#ece6d6" }, { "name": "블랙", "hex": "#26262b" }
+      ],
+      "sizes": ["FREE"], "soldOut": [],
+      "desc": "A4 파일과 노트북(13인치)이 들어가는 크기의 토트백이에요. 안쪽에 작은 주머니가 있어요.",
+      "material": "면 100% (캔버스)", "fit": "가로 38cm × 세로 40cm"
+    },
+    {
+      "id": "a04", "name": "데일리 크루삭스 3팩", "category": "acc", "shape": "socks",
+      "price": 12000, "date": "2026-09-28", "isNew": false, "best": false,
+      "colors": [
+        { "name": "화이트", "hex": "#f4f3ef" }, { "name": "블랙", "hex": "#26262b" },
+        { "name": "그레이", "hex": "#b9bbbe" }
+      ],
+      "sizes": ["FREE"], "soldOut": [],
+      "desc": "같은 색 세 켤레가 한 묶음이에요. 발목 위로 올라오는 크루 길이예요.",
+      "material": "면 80%, 폴리에스터 17%, 스판 3%", "fit": "250~280mm"
+    },
+    {
+      "id": "a05", "name": "램스울 머플러", "category": "acc", "shape": "scarf",
+      "price": 39000, "date": "2026-11-08", "isNew": true, "best": false,
+      "colors": [
+        { "name": "그레이", "hex": "#8a8c8f" }, { "name": "카멜", "hex": "#b08a5a" },
+        { "name": "버건디", "hex": "#6e2a35" }
+      ],
+      "sizes": ["FREE"], "soldOut": [],
+      "desc": "양 끝에 짧은 술이 달린 머플러예요. 한 번 두르거나 길게 늘어뜨려도 돼요.",
+      "material": "램스울 100%", "fit": "30cm × 180cm"
+    },
+    {
+      "id": "a06", "name": "나일론 크로스백", "category": "acc", "shape": "crossbag",
+      "price": 45000, "date": "2026-10-26", "isNew": false, "best": false,
+      "colors": [
+        { "name": "블랙", "hex": "#26262b" }, { "name": "올리브", "hex": "#6b6f4a" }
+      ],
+      "sizes": ["FREE"], "soldOut": ["올리브/FREE"],
+      "desc": "휴대폰, 지갑, 이어폰이 들어가는 작은 크로스백이에요. 끈 길이를 조절할 수 있어요.",
+      "material": "나일론 100%", "fit": "가로 24cm × 세로 16cm"
+    }
+  ]
+}

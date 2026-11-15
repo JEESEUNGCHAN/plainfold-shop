@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>주문서 | PLAIN FOLD</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+  <main class="container">
+    <div class="page-head"><h1>주문서</h1></div>
+    <div class="checkout" id="checkout">
+      <div class="checkout-main">
+        <form id="order-form" class="panel" novalidate>
+          <h2>배송 정보</h2>
+          <div class="field">
+            <label for="name">받는 분</label>
+            <input id="name" name="name" maxlength="20" autocomplete="name" required>
+            <p class="field-error" data-error-for="name"></p>
+          </div>
+          <div class="field">
+            <label for="phone">휴대폰 번호</label>
+            <input id="phone" name="phone" inputmode="numeric" placeholder="010-0000-0000" maxlength="13" autocomplete="tel" required>
+            <p class="field-error" data-error-for="phone"></p>
+          </div>
+          <div class="field">
+            <label for="address">주소</label>
+            <input id="address" name="address" maxlength="100" placeholder="도로명 주소" autocomplete="street-address" required>
+            <p class="field-error" data-error-for="address"></p>
+          </div>
+          <div class="field">
+            <label for="addressDetail">상세 주소</label>
+            <input id="addressDetail" name="addressDetail" maxlength="100" placeholder="동, 호수 등">
+          </div>
+          <div class="field">
+            <label for="memo">배송 메모</label>
+            <select id="memo" name="memo">
+              <option value="">선택 안 함</option>
+              <option>문 앞에 놓아 주세요</option>
+              <option>경비실에 맡겨 주세요</option>
+              <option>배송 전에 연락 주세요</option>
+              <option>택배함에 넣어 주세요</option>
+            </select>
+          </div>
+        </form>
+
+        <section class="panel">
+          <h2>결제 수단</h2>
+          <p class="notice">테스트 모드라서 결제창에서 결제를 진행해도 실제로 돈이 나가지 않아요.</p>
+          <div id="payment-method"></div>
+          <div id="agreement"></div>
+          <p class="field-error" id="widget-error"></p>
+        </section>
+      </div>
+
+      <aside class="panel summary" id="summary"></aside>
+    </div>
+  </main>
+  <script src="https://js.tosspayments.com/v2/standard"></script>
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="/js/garment.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="/js/checkout.js"></script>
+</body>
+</html>
