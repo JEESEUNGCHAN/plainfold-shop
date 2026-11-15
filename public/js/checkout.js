@@ -140,6 +140,12 @@ function persistForm() {
       });
       const order = await res.json();
       if (!res.ok) throw new Error(order.message || '주문을 만들지 못했어요.');
+      // 결제 승인 때 서버에 다시 보낼 주문 토큰 (서버가 서명한 주문 내용)
+      try {
+        localStorage.setItem('plainfold_order_' + order.orderId, order.orderToken);
+      } catch {
+        /* 저장 공간을 쓸 수 없는 환경 */
+      }
       if (order.amount !== total) await widgets.setAmount({ currency: 'KRW', value: order.amount });
 
       // 2) 결제 요청 → 성공 시 success.html, 실패 시 fail.html 로 이동

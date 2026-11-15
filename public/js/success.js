@@ -62,12 +62,20 @@ function renderError(message) {
   const amount = q.get('amount');
   if (!paymentKey || !orderId || !amount) return renderError('결제 정보가 없어요.');
 
+  let orderToken = null;
   try {
-    // 서버가 저장된 주문 금액과 비교한 뒤 토스페이먼츠 승인 API를 호출
+    orderToken = localStorage.getItem('plainfold_order_' + orderId);
+  } catch {
+    /* 무시 */
+  }
+  if (!orderToken) return renderError('주문 정보를 찾을 수 없어요. 주문서에서 다시 결제해 주세요.');
+
+  try {
+    // 서버가 주문 토큰의 서명과 금액을 확인한 뒤 토스페이먼츠 승인 API를 호출
     const res = await fetch('/api/confirm', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ paymentKey, orderId, amount: Number(amount) }),
+      body: JSON.stringify({ paymentKey, orderId, amount: Number(amount), orderToken }),
     });
     const data = await res.json();
     if (!res.ok) return renderError(data.message || '결제 승인에 실패했어요.');
@@ -77,7 +85,15 @@ function renderError(message) {
     } catch {
       /* 무시 */
     }
-    // 새로고침으로 다시 요청해도 서버는 이미 승인된 주문을 그대로 돌려준다
+    // 지난 주문 토큰 정리 (현재 주문 토큰은 새로고침 대비로 남겨 둠)
+    try {
+      Object.keys(localStorage)
+        .filter((k) => k.startsWith('plainfold_order_') && k !== 'plainfold_order_' + orderId)
+        .forEach((k) => localStorage.removeItem(k));
+    } catch {
+      /* 무시 */
+    }
+    // 새로고침으로 다시 요청해도 서버는 이미 승인된 결제를 조회해서 그대로 돌려준다
     renderDone(data.order);
   } catch {
     renderError('서버에 연결하지 못했어요. 잠시 후 다시 시도해 주세요.');
