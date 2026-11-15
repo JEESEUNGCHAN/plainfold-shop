@@ -9,7 +9,8 @@ renderFooter();
   } catch (e) {
     return showPageError(root, e.message);
   }
-  const id = new URLSearchParams(location.search).get('id');
+  // 상품 페이지(/products/ID.html)는 body의 data-product-id, 예전 주소(product.html?id=)는 쿼리에서 읽는다
+  const id = document.body.dataset.productId || new URLSearchParams(location.search).get('id');
   const p = catalog.products.find((x) => x.id === id);
   if (!p) return showPageError(root, '상품을 찾을 수 없어요.');
 

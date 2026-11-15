@@ -4,16 +4,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>장바구니 | PLAIN FOLD</title>
+  <!--@seo-->
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#faf9f6">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/logo.png">
+  <!--/@seo-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header id="site-header" class="site-header"></header>
+  <header id="site-header" class="site-header"><!--@header-->
+    <div class="test-banner">테스트 모드 · 토스페이먼츠 테스트 키로 동작하며 실제 결제는 이루어지지 않아요</div>
+    <div class="header-inner">
+      <a href="/" class="logo">PLAIN FOLD</a>
+      <nav class="main-nav">
+        <a href="/products.html" class="nav-link">전체</a>
+        <a href="/products.html?category=top" class="nav-link">상의</a>
+        <a href="/products.html?category=bottom" class="nav-link">하의</a>
+        <a href="/products.html?category=outer" class="nav-link">아우터</a>
+        <a href="/products.html?category=acc" class="nav-link">잡화</a>
+      </nav>
+      <div class="header-actions">
+        <form class="header-search" action="/products.html" role="search">
+          <input type="search" name="q" placeholder="상품 검색" aria-label="상품 검색">
+        </form>
+        <a href="/cart.html" class="cart-link" aria-label="장바구니">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z M9 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div><!--/@header--></header>
   <main class="container">
     <div class="page-head"><h1>장바구니</h1></div>
     <div id="cart"></div>
   </main>
-  <footer id="site-footer" class="site-footer"></footer>
+  <footer id="site-footer" class="site-footer"><!--@footer-->
+    <div class="footer-inner">
+      <div>
+        <strong class="logo">PLAIN FOLD</strong>
+        <p>매일 꺼내 입는 기본 옷을 만듭니다.</p>
+      </div>
+      <div class="footer-info">
+        <p>가상의 브랜드로 만든 쇼핑몰입니다. 상품과 주문은 실제로 판매·배송되지 않습니다.</p>
+        <p>결제: 토스페이먼츠 결제위젯 (테스트 모드)</p>
+      </div>
+    </div><!--/@footer--></footer>
   <script src="/js/garment.js"></script>
   <script src="/js/common.js"></script>
   <script src="/js/cart.js"></script>

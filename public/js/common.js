@@ -137,7 +137,7 @@ function productCard(p) {
   const badges = [p.isNew ? '<span class="badge">NEW</span>' : '', p.best ? '<span class="badge badge-dark">BEST</span>' : ''].join('');
   const dots = p.colors.map((c) => `<span class="dot" style="background:${c.hex}" title="${escapeHtml(c.name)}"></span>`).join('');
   return `
-    <a class="card" href="/product.html?id=${p.id}">
+    <a class="card" href="/products/${p.id}.html">
       <div class="card-img">${garmentSVG(p.shape, p.colors[0].hex, p.name)}<div class="badges">${badges}</div></div>
       <div class="card-body">
         <p class="card-name">${escapeHtml(p.name)}</p>

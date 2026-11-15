@@ -136,6 +136,16 @@ API 로직은 `lib/shop.js` 한 곳에 있고, 로컬에서는 `server.js`가, V
 - **반응형**: 모바일 폭에서도 목록·상세·주문서가 깨지지 않는다.
 - **접근성**: 색상 스와치·카테고리 탭에 `aria-label`, `aria-pressed`, `aria-selected`를 단다.
 
+### 검색 노출 (SEO · AEO · GEO)
+- 상품마다 고정 주소의 정적 페이지 `/products/상품ID.html`을 만든다. 예전 주소 `product.html?id=`는 새 주소로 이동한다.
+- 홈·상품 목록·상품 상세는 상품 내용을 HTML에 미리 넣어 둔다. 자바스크립트를 실행하지 않는 AI 검색 크롤러도 상품명·가격·설명을 읽을 수 있다.
+- 페이지마다 제목, 설명, canonical, Open Graph·트위터 카드 이미지를 넣는다.
+- 구조화 데이터(JSON-LD): 홈은 Organization·WebSite(사이트 내 검색)·FAQPage, 목록은 CollectionPage·ItemList, 상세는 Product(가격·재고·배송비)·BreadcrumbList.
+- 홈에 자주 묻는 질문 8개를 화면에 보이게 둔다(배송비, 사이즈, 결제 수단, 테스트 결제 여부 등).
+- `sitemap.xml`(26개 주소, 상품 이미지 포함), `robots.txt`(검색엔진·AI 크롤러 허용, `/api/`만 차단), `llms.txt`(AI용 사이트 요약과 전체 상품 목록).
+- 장바구니·주문서·결제 결과·404 페이지는 `noindex`.
+- 생성 방법: 상품 데이터나 페이지를 고친 뒤 `node scripts/build-seo.js` 실행. 상품 PNG·로고·공유 이미지는 `node scripts/render-images.js`(Chrome, puppeteer-core 필요)로 만든다.
+
 ---
 
 ## 8. 완료 기준

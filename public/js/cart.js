@@ -24,9 +24,9 @@ function render(catalog) {
             const p = l.product;
             const img = p ? garmentSVG(p.shape, l.hex || p.colors[0].hex, p.name) : '';
             return `<li class="cart-item${l.invalid ? ' is-invalid' : ''}">
-              <a class="cart-thumb" href="${p ? '/product.html?id=' + p.id : '#'}">${img}</a>
+              <a class="cart-thumb" href="${p ? '/products/' + p.id + '.html' : '#'}">${img}</a>
               <div class="cart-info">
-                <a class="cart-name" href="${p ? '/product.html?id=' + p.id : '#'}">${p ? escapeHtml(p.name) : '삭제된 상품'}</a>
+                <a class="cart-name" href="${p ? '/products/' + p.id + '.html' : '#'}">${p ? escapeHtml(p.name) : '삭제된 상품'}</a>
                 <p class="cart-option">${escapeHtml(l.color)} / ${escapeHtml(l.size)}</p>
                 ${l.invalid ? `<p class="field-error">${l.invalid} · 주문에서 빠져요</p>` : `<p class="cart-unit">${won(p.price)}</p>`}
               </div>
