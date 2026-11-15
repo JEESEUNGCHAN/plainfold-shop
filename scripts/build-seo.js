@@ -15,6 +15,8 @@ const ROOT = path.join(__dirname, '..');
 const PUB = path.join(ROOT, 'public');
 const BRAND = 'PLAIN FOLD';
 const TODAY = new Date().toISOString().slice(0, 10);
+// Google Search Console 소유권 확인 (홈 페이지에만 넣음)
+const GOOGLE_VERIFICATION = 'agrP9XEAaQqg9A2zajLbaLHAogfUiEcuqdowlOtBoTU';
 
 const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/products.json'), 'utf8'));
 const { products, categories, shipping } = catalog;
@@ -139,6 +141,7 @@ function buildHome() {
       url: `${SITE}/`,
       image: `${SITE}/images/og.png`,
       extra: [
+        `<meta name="google-site-verification" content="${GOOGLE_VERIFICATION}">`,
         jsonLd({
           '@graph': [
             ORG,
